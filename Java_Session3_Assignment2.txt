@@ -1,0 +1,21 @@
+2. Java statement to assign the value true to the boolean variable same , when the String  variable S1 has the same 
+contents as the String  variable S2 , and false otherwise :
+
+public class StringCreation {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String s1 = "Java";//Line1 
+		String s2 = new String("Java");//Line2 
+		String s3 = new String("Java").intern();//Line3 
+		System.out.println((s1 == s2));//prints false 
+		System.out.println((s1 == s3)); // prints true 
+	}
+
+}
+
+
+Result :
+
+false
+true
